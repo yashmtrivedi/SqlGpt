@@ -1,0 +1,143 @@
+/* form {
+    width: 100%;
+    height: 100%;
+  }
+  .input {
+    width: calc(100% - 20px);
+    margin: 10px 10px 10px;
+    border: 5px solid rgb(179, 181, 88);
+    background-color: rgb(64, 65, 80);
+    overflow: hidden;
+    overflow-wrap: break-word;
+    border-radius: 3px;
+    font-family: var(--font_default);
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    opacity: 1;
+    transition: all 0.3s ease-in-out 0s;
+    box-shadow: none;
+    height: 100px;
+    overflow: auto;
+  }
+  .input > input {
+    padding: 0.3rem 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    color: rgb(255, 255, 255);
+  }
+  .input > input:focus {
+    outline: none;
+  }
+  .input > div {
+    padding: 0.5rem 1rem;
+    background: #e34728;
+    margin-left: 0.5rem;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .add-btn {
+    padding: 0.5rem 1rem;
+    background: #ccc;
+    border: none;
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .center {
+    justify-content: center;
+  }
+  .submit-btn {
+    min-width: 130px;
+    max-width: 130px;
+    height: 30px;
+    width: 130px;
+    margin: 10px 10px 10px;
+    cursor: pointer;
+    background: none rgb(140, 140, 160);
+    border: 1px none rgb(127, 149, 235);
+    text-align: center;
+    font-family: Barlow;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    line-height: 1;
+    border-radius: 5px;
+    opacity: 1;
+    transition: all 0.3s ease-in-out 0s;
+    box-shadow: none;
+  }
+  .dialog-box {
+    margin: 0.5rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+    grid-gap: 1rem;
+  }
+  .dialog-box > input,
+  .dialog-box > select {
+    padding: 0.5rem 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .dialog-box > input:focus,
+  .dialog-box > select:focus {
+    outline: none;
+  }
+  .hide {
+    display: none;
+  }
+
+  table, td, th {
+    border: 1px solid;
+    color: rgb(255, 255, 255);
+
+  }
+  
+  table {
+    margin: 3rem 1rem 1rem 1rem;
+    border-collapse: collapse;
+    color: rgb(255, 255, 255);
+    padding-left: 20px;
+  }
+
+  .Gpt{
+    border-collapse: collapse;
+    color: rgb(255, 255, 255);
+    height: 100vh;
+    
+  }
+
+  .explanation-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .center-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    width: 100%;
+    overflow: auto;
+  }
+
+  .up-container{
+    width: 100%;
+    height: 40%;
+  }
+
+  .button-panel{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .query-area{
+    width: calc(100% - 20px);
+    margin: 10px 10px 10px;
+    height: 50%;
+  } */

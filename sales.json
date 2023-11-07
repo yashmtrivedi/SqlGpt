@@ -1,0 +1,1 @@
+{"question": "SELECT employee_dimension.emp_name FROM   sales_fact join employee_dimension on sales_fact.emp_id = employee_dimension.emp_id GROUP BY employee_dimension.emp_id, employee_dimension.emp_name ORDER BY sum(sales_fact.total) DESC LIMIT 1;"}

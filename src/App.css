@@ -1,0 +1,20 @@
+
+.App {
+  font-family: sans-serif !important;
+  background: linear-gradient(blue, 10%, pink);
+  /* background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)), url("/public/gpt-background.jpeg"); */
+  text-align: center;
+}
+
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  /* flex-direction: row; */
+  /* align-items: start; */
+  justify-content: center;
+}
+
+.App-link {
+  color: #61dafb;
+}

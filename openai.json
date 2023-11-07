@@ -1,0 +1,53 @@
+{
+  "Rows": [
+      {
+          "Data": [
+              {
+                  "VarCharValue": "emp_name"
+              },
+              {
+                  "VarCharValue": "total"
+              }
+          ]
+      },
+      {
+          "Data": [
+              {
+                  "VarCharValue": "Yash Somaiya"
+              },
+              {
+                  "VarCharValue": "5000"
+              }
+          ]
+      }
+  ],
+  "ResultSetMetadata": {
+      "ColumnInfo": [
+          {
+              "CatalogName": "hive",
+              "SchemaName": "",
+              "TableName": "",
+              "Name": "emp_name",
+              "Label": "emp_name",
+              "Type": "varchar",
+              "Precision": 2147483647,
+              "Scale": 0,
+              "Nullable": "UNKNOWN",
+              "CaseSensitive": true
+          },
+          {
+              "CatalogName": "hive",
+              "SchemaName": "",
+              "TableName": "",
+              "Name": "total",
+              "Label": "total",
+              "Type": "integer",
+              "Precision": 10,
+              "Scale": 0,
+              "Nullable": "UNKNOWN",
+              "CaseSensitive": false
+          }
+      ]
+  },
+  "content": "To display the employee who recorded the highest sales in the APAC region in the IT department, we can use the following SQL query in Apache Presto syntax:\n\n```sql\nWITH cte AS (\n  SELECT \n    ed.emp_name,\n    sf.total\n  FROM \n    employee_dimension ed \n  JOIN \n    sales_fact sf ON ed.emp_id = sf.emp_id \n  JOIN \n    region_dimension rd ON sf.region_id = rd.region_id \n  WHERE \n    rd.region_name = 'APAC' \n    AND ed.department = 'IT'\n)\nSELECT \n  cte.emp_name,\n  cte.total\nFROM \n  cte\nWHERE \n  cte.total = (SELECT MAX(total) FROM cte);\n```\n\nExplanation:\n1. We first create a CTE (Common Table Expression) called \"cte\" which selects the employee name and total sales from the employee_dimension, sales_fact, and region_dimension tables.\n2. We join the employee_dimension, sales_fact, and region_dimension tables using their foreign key relationships. We filter the data to only include the APAC region and the IT department.\n3. In the main query, we select the employee name and total sales from the CTE.\n4. We then add a WHERE clause to filter the data where the total sales is equal to the maximum sales obtained from the CTE subquery.\n\nNote:\n- The column names are prefixed with the respective table aliases to avoid any ambiguity in the query."
+}

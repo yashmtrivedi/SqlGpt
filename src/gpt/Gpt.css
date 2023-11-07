@@ -1,0 +1,283 @@
+form {
+  /* margin: 3rem auto; */
+  width: 100%;
+  height: 100%;
+}
+ /* form > div {
+  /* display: flex; */
+  /* flex-direction: row; 
+
+}  */
+
+.required-field::after {
+  content: "*";
+  color: red;
+}
+
+.fieldsGroup{
+  display: flex;
+}
+.input-schema {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.input-schema > label {
+  margin: 10px 0 0 10px;
+  line-height: 1.4;
+
+  font-size: 19px;
+    font-weight: bold;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+}
+.input-group > label {
+  margin: 10px 0 0 10px;
+  line-height: 1.4;
+  font-size: 19px;
+  font-weight: bold;
+}
+.input {
+  background: #e7e6e6;
+  width: calc(100% - 20px);
+  margin: 10px 10px 10px;
+  /* background-color: rgb(64, 65, 80); */
+  overflow: hidden;
+  overflow-wrap: break-word;
+  /* border-radius: 3px; */
+  border: none;
+  font-family: sans-serif;
+  font-size: 18px;
+  color: black;
+  line-height: 1.3;
+  transition: all 0.3s ease-in-out 0s;
+  box-shadow: none;
+  height: 130px;
+  overflow: auto;
+}
+.input > input {
+  padding: 0.3rem 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+  color: rgb(255, 255, 255);
+}
+.input > input:focus {
+  outline: none;
+}
+.input > div {
+  padding: 0.5rem 1rem;
+  background: #e34728;
+  margin-left: 0.5rem;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+.add-btn {
+  padding: 0.5rem 1rem;
+  background: #ccc;
+  border: none;
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+.center {
+  /* display: flex; */
+  justify-content: center;
+}
+.submit-btn {
+  background: blue;
+  color: white;
+  min-width: 130px;
+  max-width: 130px;
+  height: 40px;
+  width: 130px;
+  margin: 10px 10px 10px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-radius: 7px;
+  line-height: 1;
+  border: none;
+}
+.dialog-box {
+  margin: 0.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+  grid-gap: 1rem;
+}
+.dialog-box > input,
+.dialog-box > select {
+  padding: 0.5rem 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.dialog-box > input:focus,
+.dialog-box > select:focus {
+  outline: none;
+}
+.hide {
+  display: none;
+}
+
+table, td, th {
+  border: 1px solid;
+  color: rgb(255, 255, 255);
+
+}
+
+table {
+  margin: 1rem 1rem 1rem 1rem;
+  border-collapse: collapse;
+  color: rgb(255, 255, 255);
+  padding-left: 20px;
+}
+
+.Gpt{
+  padding: 15px;
+  align-self: center;
+  min-width: 100%;
+  order: 4;
+  min-height: 800px;
+  min-width: 1000px;
+  max-width: 80%;
+  max-height: 88%;
+  flex-grow: 1;
+  overflow: auto;
+  height: 90vh;
+  margin: 0px;
+  justify-content: center;
+  background-color: white;
+  border-radius: 0px;
+  opacity: 1;
+  flex-direction: column;
+  border: 1px solid grey;
+}
+
+.header{
+  vertical-align: middle;
+  border-bottom: 2px solid grey;
+  text-align: left;
+}
+
+.header img{
+  width: 130px;
+  height: auto;
+}
+
+.header > span{
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  top: -25px;
+}
+
+.header .selectDatabase > div{
+  font-size: 17px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.selectDatabase select{
+  width: 100%;
+  height: 25px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.header .selectDatabase{
+  display: inline-block;
+  float: right;
+  clear: both;
+}
+
+.explanation-container{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.center-container{
+  color: black;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  width: 100%;
+}
+
+.center-container .input-group label{
+  padding: 30px 0 0 10px;
+  margin: 0;
+}
+
+.center-container .input-group .explanation-content{
+  padding: 15px 30px;
+  white-space: pre-wrap;
+}
+
+.up-container{
+  width: 100%;
+  margin-top: 30px;
+  height: max-content;
+}
+
+.button-panel{
+  margin: auto;
+}
+
+.query-area{
+  width: calc(100% - 20px);
+  margin: 10px 10px 10px;
+  height: 50%;
+}
+
+.content{
+  width: 99%;
+  height: max-content;
+  border-top: 2px solid lightgray;
+  border-bottom: 2px solid lightgray;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 15px;
+}
+
+.content table{
+  color: black;
+  text-align: center;
+  border: 1px solid grey;
+  width: 100%;
+}
+
+.content table tr, .content table td{
+  color: black;
+}
+
+.content table tr:first-child{
+  background: grey;
+  font-weight: bold;
+}
+
+.content table tr:first-child td{
+  color: white !important;
+}
+
+.content table tr td{
+  padding: 10px;
+
+}
+
+.explanation-content{
+  border: none;
+  font-size: 20px;
+}
